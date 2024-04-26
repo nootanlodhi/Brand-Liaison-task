@@ -27,6 +27,12 @@ ul{
   list-style-type: none;
 }
 
+.image-size{
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
 @media (max-width: 1279px){
   .drop-container{
     display: none;

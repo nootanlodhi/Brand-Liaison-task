@@ -70,12 +70,12 @@ const Footer = () => {
               <Messager />
             </Stack>
             <Stack direction={"row"} alignItems={"center"} gap={2} mt={4}>
-              <img src={DigitalIndiaLogo} />
-              <img src={IndiaGovLogo} />
-              <img src={MeityLogo} />
+              <img className="image-size" src={DigitalIndiaLogo} />
+              <img className="image-size" src={IndiaGovLogo} />
+              <img className="image-size" src={MeityLogo} />
             </Stack>
             <Stack direction={"row"} alignItems={"center"} gap={2} mt={4}>
-              <img src={NicLogo} />
+              <img className="image-size" src={NicLogo} />
               <Typography>
                 © Content owned, updated and maintained by the MyGov Cell. MyGov
                 platform is designed, developed and hosted by National
@@ -90,31 +90,31 @@ const Footer = () => {
             </Typography>
             <Grid container spacing={2} mb={2}>
               <Grid item md={6}>
-                <img src={Link1} />
+                <img className="image-size" src={Link1} />
               </Grid>
               <Grid item md={6}>
-                <img src={Link2} />
+                <img className="image-size" src={Link2} />
               </Grid>
               <Grid item md={6}>
-                <img src={Link3} />
+                <img className="image-size" src={Link3} />
               </Grid>
               <Grid item md={6}>
-                <img src={Link4} />
+                <img className="image-size" src={Link4} />
               </Grid>
               <Grid item md={6}>
-                <img src={Link5} />
+                <img className="image-size" src={Link5} />
               </Grid>
               <Grid item md={6}>
-                <img src={Link6} />
+                <img className="image-size" src={Link6} />
               </Grid>
               <Grid item md={6}>
-                <img src={Link7} />
+                <img className="image-size" src={Link7} />
               </Grid>
               <Grid item md={6}>
-                <img src={Link8} />
+                <img className="image-size" src={Link8} />
               </Grid>
             </Grid>
-            <img src={Scanner} />
+            <img className="image-size" src={Scanner} />
           </Grid>
         </Grid>
       </Stack>
