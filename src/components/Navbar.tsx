@@ -11,6 +11,7 @@ import SearchBar from "../svg/SearchBar";
 import LightIcon from "../svg/LightIcon";
 import Dropdown from "./Dropdown";
 import Topbar from "./Topbar";
+import MenuIcon from "@mui/icons-material/Menu";
 
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState<boolean>(false);
@@ -20,8 +21,8 @@ export default function Navbar() {
   };
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <Topbar/>
-      <AppBar position="static">
+      <Topbar />
+      <AppBar position="static" sx={{ padding: "0 3rem" }}>
         <Toolbar>
           <IconButton
             size="large"
@@ -31,15 +32,19 @@ export default function Navbar() {
           >
             <img src={Logo} />
           </IconButton>
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            News
-          </Typography>
+          <Typography
+            variant="h6"
+            component="div"
+            sx={{ flexGrow: 1 }}
+          ></Typography>
           <Stack direction="row" spacing={2} alignItems="center">
-            <Dropdown text="Activities" />
-            <Dropdown text="MyGov States" />
-            <Dropdown text="Microsites" />
-            <Dropdown text="Get To Know" />
-            <Dropdown text="Help/Feedback" />
+            <div className="drop-container">
+              <Dropdown text="Activities" />
+              <Dropdown text="MyGov States" />
+              <Dropdown text="Microsites" />
+              <Dropdown text="Get To Know" />
+              <Dropdown text="Help/Feedback" />
+            </div>
             <LightIcon />
             <SearchBar />
             <IconButton
@@ -53,18 +58,17 @@ export default function Navbar() {
             >
               <LogoIcon />
             </IconButton>
+            <IconButton
+              color="inherit"
+              aria-label="open drawer"
+              edge="start"
+              onClick={handleDrawerToggle}
+              sx={{ mr: 2, display: { lg: "none" } }}
+            >
+              <MenuIcon />
+            </IconButton>
           </Stack>
         </Toolbar>
-
-        <IconButton
-          color="inherit"
-          aria-label="open drawer"
-          edge="start"
-          onClick={handleDrawerToggle}
-          sx={{ mr: 2, display: { sm: "none" } }}
-        >
-          bbbbbbbbbbbbb
-        </IconButton>
 
         <Drawer
           anchor="right"
@@ -75,17 +79,21 @@ export default function Navbar() {
             keepMounted: true, // Better open performance on mobile.
           }}
           sx={{
-            display: { xs: "block", sm: "none" },
+            // display: { xs: "block", sm: "none" },
             "& .MuiDrawer-paper": {
               boxSizing: "border-box",
               width: 240,
-              backgroundColor: "black",
-              color: "white",
+              backgroundColor: "#FFFFFF",
+              color: "gray",
               padding: "20px 10px",
             },
           }}
         >
-          aaaaaaaaaaaaaa
+          <Dropdown text="Activities" />
+          <Dropdown text="MyGov States" />
+          <Dropdown text="Microsites" />
+          <Dropdown text="Get To Know" />
+          <Dropdown text="Help/Feedback" />
         </Drawer>
       </AppBar>
     </Box>

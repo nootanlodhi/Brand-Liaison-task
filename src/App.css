@@ -5,6 +5,12 @@ body{
   padding: 0;
 }
 
+@media (max-width: 1279px){
+  .drop-container{
+    display: none;
+  }
+}
+
 .css-1d3z3hw-MuiOutlinedInput-notchedOutline{
   border: none !important;
 }

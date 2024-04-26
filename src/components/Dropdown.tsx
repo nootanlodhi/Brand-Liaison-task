@@ -58,7 +58,6 @@ const Dropdown:React.FC<IProps> = ({text}) => {
   };
 
   return (
-    <div>
       <FormControl sx={{ m: 1, width: "auto" }}>
         {/* <InputLabel id="demo-multiple-name-label">Name</InputLabel> */}
         <Select
@@ -92,7 +91,6 @@ const Dropdown:React.FC<IProps> = ({text}) => {
           ))}
         </Select>
       </FormControl>
-    </div>
   );
 }
 
