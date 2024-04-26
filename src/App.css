@@ -5,6 +5,24 @@ body{
   padding: 0;
 }
 
+.back-txt{
+  font-size: 1.2rem;
+}
+
+.heading-txt{
+  font-size: 1rem;
+}
+
+.faq-search-container{
+  background-color: #328679;
+  width: 100%;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 @media (max-width: 1279px){
   .drop-container{
     display: none;
