@@ -10,6 +10,7 @@ import LogoIcon from "../svg/LogoIcon";
 import SearchBar from "../svg/SearchBar";
 import LightIcon from "../svg/LightIcon";
 import Dropdown from "./Dropdown";
+import Topbar from "./Topbar";
 
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState<boolean>(false);
@@ -19,6 +20,7 @@ export default function Navbar() {
   };
   return (
     <Box sx={{ flexGrow: 1 }}>
+      <Topbar/>
       <AppBar position="static">
         <Toolbar>
           <IconButton
