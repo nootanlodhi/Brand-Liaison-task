@@ -12,10 +12,9 @@ const Home = () => {
           <ArrowBackIosIcon />
           <span className="back-txt">Back</span>
         </Stack>
-        <Stack direction="row" alignItems={"center"}>
-          <Typography variant="h3" className="heading-txt">
-            <em style={{ fontStyle: "normal", fontWeight: "" }}>MyGov</em> - FAQ
-          </Typography>
+        <Stack direction="row" alignItems={"center"} mt={4}>
+          <Typography variant="subtitle1" fontSize={"3rem"} fontWeight={200}>MyGov</Typography>
+          <Typography variant="subtitle1" fontSize={"3rem"} fontWeight={600}>- FAQ</Typography>
         </Stack>
       </Box>
       <FAQSearch/>

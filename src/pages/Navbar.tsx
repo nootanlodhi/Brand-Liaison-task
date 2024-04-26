@@ -53,7 +53,6 @@ export default function Navbar() {
               aria-label="account of current user"
               aria-controls="menu-appbar"
               aria-haspopup="true"
-              // onClick={handleMenu}
               color="inherit"
               sx={{ backgroundColor: "#F3D2C1" }}
             >

@@ -40,8 +40,27 @@ ul{
   object-fit: cover;
 }
 
+.image-size-2{
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+.nav-icons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
 @media (max-width: 500px){
   .nav-icons{
+    display: none;
+  }
+}
+
+@media (max-width: 800px){
+  .image-size{
     display: none;
   }
 }
