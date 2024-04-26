@@ -23,6 +23,12 @@ body{
   align-items: center;
 }
 
+.left-img-container{
+  /* background-image: url("../src/assets/images/left-img.png");
+  background-size: cover;
+  height: 100%; */
+}
+
 @media (max-width: 1279px){
   .drop-container{
     display: none;
@@ -31,4 +37,13 @@ body{
 
 .css-1d3z3hw-MuiOutlinedInput-notchedOutline{
   border: none !important;
+}
+
+.css-zdk3db-MuiButtonBase-root-MuiAccordionSummary-root.Mui-expanded{
+  background-color: #D5E7E5 !important;
+}
+
+.css-1086bdv-MuiPaper-root-MuiAccordion-root{
+  box-shadow: 0 0 1px 1px rgba(87, 87, 87, 0.3) !important;
+  border-radius: 10px !important;
 }
