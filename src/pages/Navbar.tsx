@@ -9,8 +9,8 @@ import { useState } from "react";
 import LogoIcon from "../svg/LogoIcon";
 import SearchBar from "../svg/SearchBar";
 import LightIcon from "../svg/LightIcon";
-import Dropdown from "./Dropdown";
-import Topbar from "./Topbar";
+import Dropdown from "../components/Dropdown";
+import Topbar from "../components/Topbar";
 import MenuIcon from "@mui/icons-material/Menu";
 
 export default function Navbar() {
