@@ -38,7 +38,7 @@ const FAQAccordion = () => {
           </Accordion>
         );
       })}
-      <Stack alignItems={"center"} p={10}><Button sx={{border:"1px solid orange", color:"black", width: "20%", borderRadius:"50px"}}>View All</Button></Stack>
+      <Stack alignItems={"center"} p={{xs:2, md:10}}><Button sx={{border:"1px solid orange", color:"black", width: "auto", borderRadius:"50px", padding:"1rem 2rem"}}>View All</Button></Stack>
     </div>
   );
 };

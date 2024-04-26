@@ -19,7 +19,7 @@ const Home = () => {
         </Stack>
       </Box>
       <FAQSearch/>
-      <Grid container spacing={4} pl={12} pr={12}>
+      <Grid container spacing={4} pl={{xs:1, md:12}} pr={{xs:1, md:12}}>
         <Grid item xs={12} md={8} mt={4}>
           <FAQAccordion/>
         </Grid>
