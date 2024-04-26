@@ -45,6 +45,7 @@ export default function Navbar() {
               <Dropdown text="Get To Know" />
               <Dropdown text="Help/Feedback" />
             </div>
+            <div className="nav-icons">
             <LightIcon />
             <SearchBar />
             <IconButton
@@ -58,6 +59,7 @@ export default function Navbar() {
             >
               <LogoIcon />
             </IconButton>
+            </div>
             <IconButton
               color="inherit"
               aria-label="open drawer"

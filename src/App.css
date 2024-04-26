@@ -33,6 +33,12 @@ ul{
   object-fit: cover;
 }
 
+@media (max-width: 500px){
+  .nav-icons{
+    display: none;
+  }
+}
+
 @media (max-width: 1279px){
   .drop-container{
     display: none;

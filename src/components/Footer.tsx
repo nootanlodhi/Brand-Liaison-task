@@ -27,7 +27,7 @@ const Footer = () => {
     <div>
       <Stack
         alignItems={"center"}
-        p={10}
+        p={{xs:1, sm:10,}}
         sx={{ backgroundColor: "#2E2E2E", color: "#FFFFFF" }}
       >
         <Grid container spacing={8}>
@@ -60,7 +60,7 @@ const Footer = () => {
               }}
             ></Box>
             <Stack direction={"row"} alignItems={"center"} gap={2}>
-              <Typography>Follow</Typography>
+              <Typography display={{xs:"none", sm:"flex"}}>Follow</Typography>
               <Twitter />
               <Facebook />
               <Youtube />

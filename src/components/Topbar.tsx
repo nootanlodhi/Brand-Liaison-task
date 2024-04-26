@@ -8,7 +8,7 @@ import Settings from '../svg/Settings'
 
 const Topbar = () => {
   return (
-    <Box sx={{backgroundColor:"#2AB998", color:"#FFFFFF", height:"40px", padding:"0 5rem"}} display={"flex"} justifyContent={"space-between"} alignItems={"center"}>
+    <Box pl={{xs:1, sm:9}} pr={{xs:1, sm:9}} sx={{backgroundColor:"#2AB998", color:"#FFFFFF", height:"40px"}} display={"flex"} justifyContent={"space-between"} alignItems={"center"}>
       <Stack direction={"row"} gap={1}>
         <img src={Flag}/>
         <a style={{color:"#FFFFFF"}} href="https://www.india.gov.in/" target="_blank">GOVERNMENT OF INDIA</a>
