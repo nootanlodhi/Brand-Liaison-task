@@ -1,70 +1,47 @@
 import { Box, Typography } from "@mui/material";
-import { styled, alpha } from "@mui/material/styles";
+import { styled } from "@mui/material/styles";
 import InputBase from "@mui/material/InputBase";
 import SearchIcon from "@mui/icons-material/Search";
-
-const Search = styled("div")(({ theme }) => ({
-  position: "relative",
-  borderRadius: theme.shape.borderRadius,
-  backgroundColor: "#FFFFFF",
-  color: "gray",
-  "&:hover": {
-    backgroundColor: "#FFFFFF",
-  },
-  //   marginRight: theme.spacing(2),
-  //   marginLeft: 0,
-  width: "50%",
-  [theme.breakpoints.up("sm")]: {
-    // marginLeft: theme.spacing(3),
-    width: "auto",
-  },
-}));
+import BgImg1 from "../assets/images/bg-img-1.png"
+import BgImg2 from "../assets/images/bg-img-2.png"
 
 const SearchIconWrapper = styled("div")(({ theme }) => ({
   padding: theme.spacing(0, 2),
-//   height: "100%",
-  //   position: "absolute",
   pointerEvents: "none",
   display: "flex",
   alignItems: "center",
   justifyContent: "center",
   backgroundColor: "#2AB998",
+  borderTopRightRadius: "8px",
+  borderBottomRightRadius: "8px"
 }));
 
-const StyledInputBase = styled(InputBase)(({ theme }) => ({
+const StyledInputBase = styled(InputBase)(() => ({
   backgroundColor: "#FFFFFF",
   color: "gray",
-  "& .MuiInputBase-input": {
-    padding: theme.spacing(1, 1, 1, 0),
-    // vertical padding + font size from searchIcon
-    paddingLeft: `calc(1em + ${theme.spacing(4)})`,
-    transition: theme.transitions.create("width"),
-    width: "100%",
-    [theme.breakpoints.up("md")]: {
-      width: "20ch",
-    },
-  },
+  width: "40rem",
+  padding: "1rem 1.8rem",
+  borderTopLeftRadius: "8px",
+  borderBottomLeftRadius: "8px"
 }));
 
 const FAQSearch = () => {
   return (
     <div className="faq-search-container">
-      <Typography variant="h1">FAQ</Typography>
-      {/* <Search> */}
-      {/* <SearchIconWrapper>
-          <SearchIcon />
-        </SearchIconWrapper> */}
-      <Box display={"flex"} sx={{borderRadius:"8px"}}>
-        <StyledInputBase
-          placeholder="Search…"
-          inputProps={{ "aria-label": "search" }}
-        />
-        <SearchIconWrapper>
-          <SearchIcon />
-        </SearchIconWrapper>
-      </Box>
-
-      {/* </Search> */}
+      <img className="image-size" src={BgImg1}/>
+      <img className="image-size" src={BgImg2}/>
+      <div className="inner-faqdiv">
+        <Typography variant="h1">FAQ</Typography>
+        <Box display={"flex"} sx={{ width:"100%" }}>
+          <StyledInputBase
+            placeholder="Search…"
+            inputProps={{ "aria-label": "search" }}
+          />
+          <SearchIconWrapper>
+            <SearchIcon />
+          </SearchIconWrapper>
+        </Box>
+      </div>
     </div>
   );
 };
